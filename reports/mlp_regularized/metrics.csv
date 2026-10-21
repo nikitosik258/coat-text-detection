@@ -1,0 +1,2 @@
+accuracy,precision_label_1,recall_label_1,f1_label_1,roc_auc,best_epoch,training_seconds,prediction_seconds,train_examples,internal_validation_examples,device,official_validation_used,official_test_used
+0.675,0.7009954058192955,0.6103333333333333,0.6525302922309337,0.7503419444444446,2,114.94897960001254,0.2964956999931019,24000,6000,cpu,False,False

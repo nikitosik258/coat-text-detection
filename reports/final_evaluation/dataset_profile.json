@@ -1,0 +1,19 @@
+{
+  "dataset": "RussianNLP/coat",
+  "configuration": "binary",
+  "split": "validation",
+  "examples": 24628,
+  "columns": [
+    "id",
+    "text",
+    "label"
+  ],
+  "class_counts": {
+    "0": 12314,
+    "1": 12314
+  },
+  "empty_or_whitespace_texts": 0,
+  "duplicate_exact_text_rows": 0,
+  "overlapping_ids_with_train_and_internal_validation": 0,
+  "overlapping_exact_texts_with_train_and_internal_validation": 0
+}

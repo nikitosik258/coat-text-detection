@@ -1,0 +1,29 @@
+{
+  "accuracy": 0.675,
+  "precision_label_1": 0.7009954058192955,
+  "recall_label_1": 0.6103333333333333,
+  "f1_label_1": 0.6525302922309337,
+  "roc_auc": 0.7503419444444446,
+  "confusion_matrix": [
+    [
+      2219,
+      781
+    ],
+    [
+      1169,
+      1831
+    ]
+  ],
+  "labels": [
+    0,
+    1
+  ],
+  "best_epoch": 2,
+  "training_seconds": 114.94897960001254,
+  "prediction_seconds": 0.2964956999931019,
+  "train_examples": 24000,
+  "internal_validation_examples": 6000,
+  "device": "cpu",
+  "official_validation_used": false,
+  "official_test_used": false
+}

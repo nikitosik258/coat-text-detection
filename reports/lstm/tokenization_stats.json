@@ -1,0 +1,15 @@
+{
+  "tokenizer_pattern": "\\w+|[^\\w\\s]",
+  "max_vocab_size": 20000,
+  "vocabulary_size": 20000,
+  "max_sequence_length": 192,
+  "lengths_over_train_and_internal_validation": {
+    "mean": 50.702533333333335,
+    "median": 24.0,
+    "q90": 107.0,
+    "q95": 200.04999999999927,
+    "q99": 378.0
+  },
+  "fraction_truncated_at_max_length": 0.050633333333333336,
+  "validation_unknown_token_fraction": 0.1494507829401463
+}

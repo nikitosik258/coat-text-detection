@@ -1,0 +1,8 @@
+kind,path,purpose
+table,reports/final_evaluation/model_comparison.csv,Основные метрики моделей
+figure,reports/final_evaluation/model_comparison.png,F1 и ROC-AUC
+figure,reports/final_evaluation/roc_curves.png,ROC-кривые
+figure,reports/final_evaluation/pr_curves.png,Precision-recall кривые
+figure,reports/error_analysis/f1_by_length.png,F1 по длине текста
+figure,reports/error_analysis/fp_fn_comparison.png,Структура ошибок
+table,reports/error_analysis/bootstrap_pairwise_differences.csv,Bootstrap-интервалы различий

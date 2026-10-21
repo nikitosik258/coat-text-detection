@@ -1,0 +1,10 @@
+{
+  "bootstrap_repetitions": 2000,
+  "seed": 42,
+  "threshold": 0.5,
+  "length_quartile_bounds": [
+    13.0,
+    20.0,
+    39.0
+  ]
+}

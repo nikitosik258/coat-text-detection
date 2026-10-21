@@ -1,0 +1,2 @@
+accuracy,precision_label_1,recall_label_1,f1_label_1,roc_auc,fit_seconds,predict_seconds,train_examples,internal_validation_examples,official_validation_used,official_test_used,tfidf_vocabulary_size
+0.6766666666666666,0.6977611940298507,0.6233333333333333,0.6584507042253521,0.7419465,2.780302600003779,0.5353913999861106,24000,6000,False,False,30000

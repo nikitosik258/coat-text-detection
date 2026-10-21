@@ -1,0 +1,21 @@
+{
+  "dataset": "RussianNLP/coat",
+  "configuration": "binary",
+  "source_official_split": "train",
+  "random_state": 42,
+  "sample_per_class": 15000,
+  "subsets": {
+    "internal_validation": 6000,
+    "train": 24000
+  },
+  "class_counts": {
+    "internal_validation": {
+      "0": 3000,
+      "1": 3000
+    },
+    "train": {
+      "0": 12000,
+      "1": 12000
+    }
+  }
+}

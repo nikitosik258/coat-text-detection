@@ -1,0 +1,28 @@
+{
+  "accuracy": 0.6766666666666666,
+  "precision_label_1": 0.6977611940298507,
+  "recall_label_1": 0.6233333333333333,
+  "f1_label_1": 0.6584507042253521,
+  "roc_auc": 0.7419465,
+  "confusion_matrix": [
+    [
+      2190,
+      810
+    ],
+    [
+      1130,
+      1870
+    ]
+  ],
+  "labels": [
+    0,
+    1
+  ],
+  "fit_seconds": 2.780302600003779,
+  "predict_seconds": 0.5353913999861106,
+  "train_examples": 24000,
+  "internal_validation_examples": 6000,
+  "official_validation_used": false,
+  "official_test_used": false,
+  "tfidf_vocabulary_size": 30000
+}

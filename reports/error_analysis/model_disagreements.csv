@@ -1,0 +1,3 @@
+comparison,both_correct,both_wrong,first_correct_second_wrong,second_correct_first_wrong
+LSTM vs Regularized MLP,13575,4006,3732,3315
+LSTM vs Logistic Regression,13443,4042,3864,3279

@@ -1,0 +1,17 @@
+Название,Тип,Путь,Исходный файл данных,Раздел,Назначение
+figure_1_roc_curves,рисунок,figures/figure_1_roc_curves.png,reports\final_evaluation\roc_curves.png,Результаты и обсуждение,ROC-кривые четырёх моделей на официальной validation CoAT.
+figure_2_f1_by_length,рисунок,figures/figure_2_f1_by_length.png,reports\error_analysis\f1_by_length.png,Результаты и обсуждение,"F1 моделей в квартилях длины текста; связь описательная, не причинная."
+figure_3_bootstrap_differences,рисунок,figures/figure_3_bootstrap_differences.png,reports/error_analysis/bootstrap_pairwise_differences.csv,Результаты и обсуждение,Парные 95% percentile CI разностей LSTM относительно двух моделей.
+figure_4_fp_fn,рисунок,figures/figure_4_fp_fn.png,reports\error_analysis\fp_fn_comparison.png,Результаты и обсуждение,Количество ложноположительных и ложноотрицательных решений на official validation.
+table_1_dataset,таблица,tables/table_1_dataset.md,сохранённые CSV/JSON reports,см. article_outline.md,Таблица с фактическими результатами.
+table_2_models,таблица,tables/table_2_models.md,сохранённые CSV/JSON reports,см. article_outline.md,Таблица с фактическими результатами.
+table_3_final_metrics,таблица,tables/table_3_final_metrics.md,сохранённые CSV/JSON reports,см. article_outline.md,Таблица с фактическими результатами.
+table_4_bootstrap,таблица,tables/table_4_bootstrap.md,сохранённые CSV/JSON reports,см. article_outline.md,Таблица с фактическими результатами.
+table_s1_errors,таблица,tables/table_s1_errors.md,сохранённые CSV/JSON reports,см. article_outline.md,Таблица с фактическими результатами.
+methodology_notes.md,текст,methodology_notes.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.
+results_notes.md,текст,results_notes.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.
+conclusions_notes.md,текст,conclusions_notes.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.
+limitations_notes.md,текст,limitations_notes.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.
+sources_manifest.md,текст,sources_manifest.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.
+article_outline.md,текст,article_outline.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.
+article_ready_summary.md,текст,article_ready_summary.md,сохранённые отчёты и код,см. article_outline.md,Научные заметки для рукописи.

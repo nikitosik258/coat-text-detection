@@ -1,0 +1,34 @@
+{
+  "dataset": "RussianNLP/coat",
+  "configuration": "binary",
+  "split": "validation",
+  "threshold": 0.5,
+  "device": "cpu",
+  "preprocessing_included_in_inference_timing": true,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.14.1+cpu",
+  "scikit_learn": "1.9.1",
+  "models": {
+    "logreg": {
+      "path": "models/tfidf_logreg.joblib",
+      "sha256": "b25bc132f2f0f6cd69a43f834eefb2cf86847e3fddd467bbc33a64b3e0d96734"
+    },
+    "mlp_original": {
+      "path": "models/mlp_best.pt",
+      "sha256": "1a31f5ac244c61f5ceb861e465148283dcfd90b1d784b4e3064b68b781ed2657"
+    },
+    "mlp_regularized": {
+      "path": "models/mlp_regularized_best.pt",
+      "sha256": "c3b42bcc201c351dafa3fa6d425d598b4fda53cf0b6703e32130fc4a7e4dc535"
+    },
+    "lstm": {
+      "path": "models/lstm_best.pt",
+      "sha256": "fc9cb149fd6c68f33cdd5a999caea0961f32b43669135bf598c268b7ca91612d"
+    }
+  },
+  "lstm_vocab": {
+    "path": "models/lstm_vocab.json",
+    "sha256": "e9985d43ed39a68379537af846c8a029b6904e59588cccec01b1da345488d74d"
+  }
+}

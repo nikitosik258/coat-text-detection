@@ -1,0 +1,25 @@
+{
+  "split": {
+    "examples": 30000,
+    "train": 24000,
+    "internal_validation": 6000,
+    "unique_ids": 30000,
+    "random_state": 42,
+    "class_counts": {
+      "internal_validation": {
+        "0": 3000,
+        "1": 3000
+      },
+      "train": {
+        "0": 12000,
+        "1": 12000
+      }
+    },
+    "valid": true
+  },
+  "metrics_consistent": true,
+  "common_errors": 3376,
+  "protected_hashes_unchanged": true,
+  "critical_open": [],
+  "major_open": []
+}

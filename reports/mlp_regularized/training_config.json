@@ -1,0 +1,16 @@
+{
+  "input_dim": 30000,
+  "hidden_dim_1": 128,
+  "hidden_dim_2": 32,
+  "dropout_1": 0.4,
+  "dropout_2": 0.4,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "batch_size": 64,
+  "max_epochs": 20,
+  "patience": 4,
+  "random_state": 42,
+  "threshold": 0.5,
+  "tfidf_source": "models\\tfidf_logreg.joblib",
+  "assignments_source": "reports\\baseline\\split_assignments.csv"
+}

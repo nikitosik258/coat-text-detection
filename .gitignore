@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+reports/eda/*
+!reports/eda/.gitkeep
+models/*.joblib
+!models/.gitkeep
