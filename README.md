@@ -17,8 +17,8 @@ uv sync
 ## Основные команды
 
 ```powershell
-# Разведочный анализ данных
-uv run coat-eda
+# Откройте ноутбуки в VS Code или JupyterLab
+uv run jupyter lab notebooks/
 
 # Фиксированная выборка и базовая модель
 uv run coat-baseline
@@ -31,19 +31,12 @@ uv run coat-lstm
 # Инференс сохранённых моделей на official validation
 uv run coat-final-eval
 
-# Анализ ошибок и bootstrap
-uv run coat-error-analysis
-
-# Финальный аудит и тесты
-uv run coat-final-audit
+# Анализ ошибок, аудит и материалы статьи выполняются в ноутбуках
 uv run pytest
 
-# Материалы для статьи и их проверка
-uv run coat-article-materials
-uv run coat-article-materials --check
 ```
 
-Команды обучения создают экспериментальные артефакты. Для работы с уже полученными результатами используйте `coat-final-eval`, `coat-error-analysis`, `coat-final-audit` и `coat-article-materials`, а не повторное обучение.
+Команды обучения создают экспериментальные артефакты. Для просмотра и анализа уже полученных результатов используйте ноутбуки из `notebooks/`, а не повторное обучение.
 
 ## Результаты проекта
 
@@ -62,17 +55,11 @@ uv run coat-article-materials --check
 
 ## EDA
 
-```powershell
-uv run coat-eda
-```
+Ноутбук: `notebooks/01_eda.ipynb`.
 
 Результаты сохраняются в `reports/eda/`: описание схемы, статистики по official split, точные дубликаты и пересечения, проверка возможности сбалансированной выборки и графики. Проверка идентичности текстов основана на SHA-256-хэшах; тексты не копируются в отчёты. Пустой текст — пустая или состоящая только из пробелов строка.
 
-Для другого каталога результатов:
-
-```powershell
-uv run python -m coat_eda.eda --output-dir reports/eda
-```
+В нём данные загружаются через `datasets`, а результаты сохраняются в `reports/eda/`.
 
 ## Подготовка выборки и Logistic Regression
 
@@ -118,32 +105,21 @@ uv run coat-final-eval
 
 ## Анализ ошибок и неопределённости
 
-```powershell
-uv run coat-error-analysis
-```
+Ноутбук: `notebooks/02_error_analysis.ipynb`.
 
 Этап использует только сохранённые prediction CSV. Он не обучает модели, не меняет checkpoints и не подбирает порог. `reports/error_analysis/` содержит FP/FN, анализ длины и уверенности, расхождения моделей, примеры ошибок, а также 2 000 парных стратифицированных bootstrap-повторов с 95% percentile CI.
 
-Для целевого восстановления отчёта об общих ошибках всех четырёх моделей без повторного bootstrap:
-
-```powershell
-uv run coat-error-analysis --repair
-```
+Он использует сохранённые prediction CSV и bootstrap-результаты; переобучение и повторная оценка моделей не выполняются.
 
 ## Технический аудит
 
-```powershell
-uv run coat-final-audit
-```
+Ноутбук: `notebooks/03_final_audit.ipynb`.
 
 Аудит не запускает обучение, итоговый инференс или bootstrap заново. Он пересчитывает метрики из сохранённых prediction CSV, проверяет fixed split и SHA-256 защищённых артефактов. Результаты записываются в `reports/final_audit/`.
 
 ## Материалы для научной статьи
 
-```powershell
-uv run coat-article-materials
-uv run coat-article-materials --check
-```
+Ноутбук: `notebooks/04_article_materials.ipynb`.
 
 Команда использует только сохранённые CSV/JSON и создаёт в `reports/article_materials/` русскоязычные таблицы, отобранные PNG/PDF-рисунки, методические заметки, выводы, ограничения, структуру статьи и проверенный перечень источников. Это комплект для следующего самостоятельного этапа подготовки рукописи, а не LaTeX-статья.
 
@@ -153,4 +129,4 @@ uv run coat-article-materials --check
 uv run pytest
 ```
 
-Тесты не требуют полного обучения. Они проверяют разбиение, отсутствие пересечения ID, расчёт метрик, загрузку моделей для инференса, bootstrap, согласованность prediction CSV и материалы для статьи.
+Тесты не требуют полного обучения. Они проверяют разбиение, отсутствие пересечения ID, расчёт метрик и загрузку моделей для инференса. Ноутбуки предназначены для интерактивного анализа и формирования отчётов.

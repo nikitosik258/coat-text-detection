@@ -14,17 +14,13 @@ dependencies = [
 ]
 
 [project.scripts]
-coat-eda = "coat_eda.eda:main"
 coat-baseline = "coat_eda.baseline:main"
 coat-mlp = "coat_eda.mlp:main"
 coat-lstm = "coat_eda.lstm:main"
 coat-final-eval = "coat_eda.final_evaluation:main"
-coat-error-analysis = "coat_eda.error_analysis:main"
-coat-final-audit = "coat_eda.final_audit:main"
-coat-article-materials = "coat_eda.article_materials:main"
 
 [dependency-groups]
-dev = ["pytest>=8.0"]
+dev = ["jupyterlab>=4.0", "pytest>=8.0"]
 
 [build-system]
 requires = ["hatchling"]
